@@ -26,14 +26,12 @@ public class CartServiceImpl implements CartService {
 	@Override
 	public String addProductToCart(String userId, String prodId, int prodQty) {
 	//DEBUG
-		PrintStream out;
-		try {
-			out = new PrintStream(new FileOutputStream("output.log"));
-            System.setOut(out);
-		} catch (FileNotFoundException e) {
-			
-			e.printStackTrace();
-		}
+
+		System.out.println("Adding a product to cart.");
+						System.out.println("Adding ASDF a product to cart.");
+				System.out.println("Adding ASDF a product to cart.");
+				System.out.println("Adding ASDF a product to cart.");
+				System.out.println("Adding ASDF a product to cart.");
 
 		String status = "Failed to Add into Cart";
 		
@@ -47,6 +45,11 @@ public class CartServiceImpl implements CartService {
 		PreparedStatement ps2 = null;
 
 		ResultSet rs = null;
+				System.out.println("Adding ASDF a product to cart.");
+
+		System.out.println("PS: " + (ps == null));
+		System.out.println("PS2: " + (ps2 == null));
+		System.out.println("Adding 1234 a product to cart.");
 
 		try {
 			//DEBUG

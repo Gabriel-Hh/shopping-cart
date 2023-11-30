@@ -19,9 +19,10 @@
 <body style="background-color: #E6F9E6;">
 
 	<%
+	System.out.println("asdfqwer");
 	
 	CartServiceImpl cartService = new CartServiceImpl();
-	out.println(cartService.addProductToCart("guest@gmail.com", "P20230423083830", 1));
+	System.out.println(cartService.addProductToCart("admin@gmail.com", "P20230423083830", 1));
 	/* Checking the user credentials */
 	String userName = (String) session.getAttribute("username");
 	String password = (String) session.getAttribute("password");
@@ -56,7 +57,8 @@
 	%>
 
 	<jsp:include page="header.jsp" />
-
+	<%
+	System.out.println("asdfqwer");%>
 	<div class="text-center"
 		style="color: black; font-size: 14px; font-weight: bold;"><%=message%></div>
 	<div class="text-center" id="message"
